@@ -1,4 +1,0 @@
-
-android {
-    flavorDimensions "nativescriptcouchbase", "nativescriptimagecache", "nativescriptpluginfirebase", "nativescripttelerikui", "nativescripttimedatepicker", "tnscoremoduleswidgets"
-}
