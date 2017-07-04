@@ -1,0 +1,9 @@
+﻿@import '~/nativescript-theme-core/css/orange.css';
+@import url('~/platform.css');
+
+.fa {
+    font-family: 'FontAwesome', fontawesome-webfont;
+}
+.list-item label {
+    vertical-align: center;
+}

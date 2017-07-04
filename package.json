@@ -1,0 +1,37 @@
+{
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "readme": "NativeScript Application",
+  "repository": "<fill-your-repository-here>",
+  "nativescript": {
+    "id": "uk.co.wholeschoolmeals.app",
+    "tns-android": {
+      "version": "3.1.1"
+    },
+    "tns-ios": {
+      "version": "3.1.0"
+    }
+  },
+  "dependencies": {
+    "email-validator": "^1.0.7",
+    "moment": "^2.18.1",
+    "nativescript-couchbase": "^1.0.18",
+    "nativescript-image-cache": "^1.0.6",
+    "nativescript-iqkeyboardmanager": "^1.1.0",
+    "nativescript-plugin-firebase": "^4.0.3",
+    "nativescript-telerik-ui": "^3.0.0-2017.6.22.5",
+    "nativescript-theme-core": "~1.0.2",
+    "nativescript-timedatepicker": "^1.2.0",
+    "tns-core-modules": "~3.0.0"
+  },
+  "devDependencies": {
+    "babel-traverse": "6.25.0",
+    "babel-types": "6.25.0",
+    "babylon": "6.17.4",
+    "lazy": "1.0.11",
+    "nativescript-dev-android-snapshot": "^0.*.*",
+    "nativescript-dev-typescript": "~0.4.0",
+    "tns-platform-declarations": "^3.1.0",
+    "typescript": "~2.2.1"
+  }
+}

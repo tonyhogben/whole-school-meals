@@ -1,0 +1,25 @@
+.instructions {
+    font-size: 12;
+    padding: 10;
+}
+
+.input {
+    padding: 5 10;
+    border-top-color: #eee;
+    border-top-width: 1;
+    border-top-style: solid;
+}
+
+textview {
+    padding: 10 5;
+    border-top-color: #eee;
+    border-top-width: 1;
+    border-top-style: solid;
+}
+
+.submit {
+    background-color: #456817;
+    text-transform: uppercase;
+    color: white;
+    margin: 10;
+}

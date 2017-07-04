@@ -1,0 +1,5 @@
+/Users/tony/apps/Whole-School-Meals/platforms/android/src/main/assets/app/tns_modules/nativescript-plugin-firebase/firebase-common.js
+/Users/tony/apps/Whole-School-Meals/platforms/android/src/main/assets/app/tns_modules/nativescript-plugin-firebase/firebase.js
+/Users/tony/apps/Whole-School-Meals/platforms/android/src/main/assets/app/tns_modules/nativescript-plugin-firebase/scripts/installer.js
+/Users/tony/apps/Whole-School-Meals/platforms/android/src/main/assets/app/tns_modules/nativescript-plugin-firebase/scripts/postinstall.js
+/Users/tony/apps/Whole-School-Meals/platforms/android/src/main/assets/app/views/main/main.js

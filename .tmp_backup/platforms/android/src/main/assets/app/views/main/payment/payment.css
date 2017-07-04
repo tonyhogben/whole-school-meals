@@ -1,0 +1,38 @@
+.payment-tab {
+    margin: 10;
+}
+
+.title {
+    font-size: 22;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+.para {
+    font-size: 14;
+    margin-bottom: 10;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bullet {
+    margin-bottom: 5;
+}
+
+.bullet-point {
+    font-size: 14;
+    vertical-align: top;
+    color: #456817;
+}
+
+.bullet-text {
+    font-size: 12;
+    vertical-align: top;
+}
+
+.payment-btn {
+    background-color: #456817;
+    color: white;
+    margin-bottom: 10;
+}

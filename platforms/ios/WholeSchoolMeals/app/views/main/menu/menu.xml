@@ -1,0 +1,177 @@
+<GridLayout 
+    xmlns:i="nativescript-image-cache"
+    columns="auto, *, auto" rows="auto, *" 
+    loaded="onViewLoaded" 
+    unloaded="onViewUnloaded">
+    <Button row="0" col="0" tap="prevDay" class="fa nav" text="&#xf053;" />
+    <Button row="0" col="1" tap="pickDay" id="date" class="fa cal" text="{{ displayDate + ' &#xf073;' }}" />>
+    <Button row="0" col="2" tap="nextDay" class="fa nav" text="&#xf054;" />
+    <StackLayout id="menuWrapper" row="1" colSpan="3">
+        <Label text="{{ menuError }}" class="menu-error" textWrap="true" visibility="{{ menuError ? 'visible' : 'collapsed' }}" />
+        <ScrollView>
+            <StackLayout id="menuWrap" visibility="{{ menuError ? 'collapsed' : 'visible' }}">
+                <WrapLayout class="title" orientation="horizontal">
+                    <Label text="Mains " />
+                </WrapLayout>
+                
+                <StackLayout class="item" tap="goMain1">
+                    <AbsoluteLayout>
+                        <i:NSImage src="{{ menu.main1.photo }}" width="100%" height="150" stretch="aspectFill" placeholder="~/images/loading.png" placeholderStretch="aspectFill" />
+                        <WrapLayout class="dish" orientation="horizontal" top="100">
+                            <Label text="{{ menu.main1.name }}" />
+                            <Label class="veg" text="V" visibility="{{ menu.main1.vegetarian ? 'visible' : 'collapsed' }}" textWrap="true" />
+                        </WrapLayout>
+                    </AbsoluteLayout>
+                    <WrapLayout class="alert" orientation="horizontal" visibility="{{ menu.main1.hasYourAllergens ? 'visible' : 'collapsed' }}">
+                        <Label class="fa" text="&#xf06a; " textWrap="true" />
+                        <Label text="{{ menu.main1.yourAllergenMessage }}" textWrap="true" />
+                    </WrapLayout>
+                </StackLayout>
+
+                <StackLayout class="item" tap="goMain2">
+                    <AbsoluteLayout>
+                        <i:NSImage src="{{ menu.main2.photo }}" width="100%" height="150" stretch="aspectFill" placeholder="~/images/loading.png" placeholderStretch="aspectFill" />
+                        <WrapLayout class="dish" orientation="horizontal" top="100">
+                            <Label text="{{ menu.main2.name }}" />
+                            <Label class="veg" text="V" visibility="{{ menu.main2.vegetarian ? 'visible' : 'collapsed' }}" textWrap="true" />
+                        </WrapLayout>
+                    </AbsoluteLayout>
+                    <WrapLayout class="alert" orientation="horizontal" visibility="{{ menu.main2.hasYourAllergens ? 'visible' : 'collapsed' }}">
+                        <Label class="fa" text="&#xf06a; " textWrap="true" />
+                        <Label text="{{ menu.main2.yourAllergenMessage }}" textWrap="true" />
+                    </WrapLayout>
+                </StackLayout>
+
+                <StackLayout class="title">
+                    <Label text="Sides" />
+                </StackLayout>
+
+                <StackLayout class="item" tap="goSide1">
+                    <AbsoluteLayout>
+                        <i:NSImage src="{{ menu.side1.photo }}" width="100%" height="150" stretch="aspectFill" placeholder="~/images/loading.png" placeholderStretch="aspectFill" />
+                        <WrapLayout class="dish" orientation="horizontal" top="100">
+                            <Label text="{{ menu.side1.name }}" />
+                            <Label class="veg" text="V" visibility="{{ menu.side1.vegetarian ? 'visible' : 'collapsed' }}" textWrap="true" />
+                        </WrapLayout>
+                    </AbsoluteLayout>
+                    <WrapLayout class="alert" orientation="horizontal" visibility="{{ menu.side1.yourAllergenMessage ? 'visible' : 'collapsed' }}" >
+                        <Label class="fa" text="&#xf06a; " textWrap="true" />
+                        <Label text="{{ menu.side1.yourAllergenMessage }}" textWrap="true" />
+                    </WrapLayout>
+                </StackLayout>
+                <StackLayout class="item" tap="goSide2" visibility="{{ menu.side2.name ? 'visible' : 'collapsed' }}">
+                    <AbsoluteLayout>
+                        <i:NSImage src="{{ menu.side2.photo }}" width="100%" height="150" stretch="aspectFill" placeholder="~/images/loading.png" placeholderStretch="aspectFill" />
+                        <WrapLayout class="dish" orientation="horizontal" top="100">
+                            <Label text="{{ menu.side2.name }}" />
+                            <Label class="veg" text="V" visibility="{{ menu.side2.vegetarian ? 'visible' : 'collapsed' }}" textWrap="true" />
+                        </WrapLayout>
+                    </AbsoluteLayout>
+                    <WrapLayout class="alert" orientation="horizontal" visibility="{{ menu.side2.yourAllergenMessage ? 'visible' : 'collapsed' }}">
+                        <Label class="fa" text="&#xf06a; " textWrap="true" />
+                        <Label text="{{ menu.side2.yourAllergenMessage }}" textWrap="true" />
+                    </WrapLayout>
+                </StackLayout>
+                <StackLayout class="item" tap="goSide3" visibility="{{ menu.side3.name ? 'visible' : 'collapsed' }}">
+                    <AbsoluteLayout>
+                        <i:NSImage src="{{ menu.side3.photo }}" width="100%" height="150" stretch="aspectFill" placeholder="~/images/loading.png" placeholderStretch="aspectFill" />
+                        <WrapLayout class="dish" orientation="horizontal" top="100">
+                            <Label text="{{ menu.side3.name }}" />
+                            <Label class="veg" text="V" visibility="{{ menu.side3.vegetarian ? 'visible' : 'collapsed' }}" textWrap="true" />
+                        </WrapLayout>
+                    </AbsoluteLayout>
+                    <WrapLayout class="alert" orientation="horizontal" visibility="{{ menu.side3.yourAllergenMessage ? 'visible' : 'collapsed' }}">
+                        <Label class="fa" text="&#xf06a; " textWrap="true" />
+                        <Label text="{{ menu.side3.yourAllergenMessage }}" textWrap="true" />
+                    </WrapLayout>
+                </StackLayout>
+                <StackLayout class="item" tap="goSide4">
+                    <AbsoluteLayout>
+                        <i:NSImage src="{{ menu.side4.photo }}" width="100%" height="150" stretch="aspectFill" placeholder="~/images/loading.png" placeholderStretch="aspectFill" />
+                        <WrapLayout class="dish" orientation="horizontal" top="100">
+                            <Label text="{{ menu.side4.name }}" />
+                            <Label class="veg" text="V" visibility="{{ menu.side4.vegetarian ? 'visible' : 'collapsed' }}" textWrap="true" />
+                        </WrapLayout>
+                    </AbsoluteLayout>
+                    <WrapLayout class="alert" orientation="horizontal" visibility="{{ menu.side4.yourAllergenMessage ? 'visible' : 'collapsed' }}">
+                        <Label class="fa" text="&#xf06a; " textWrap="true" />
+                        <Label text="{{ menu.side4.yourAllergenMessage }}" textWrap="true" />
+                    </WrapLayout>
+                </StackLayout>
+                <StackLayout class="item" tap="goSide5">
+                    <AbsoluteLayout>
+                        <i:NSImage src="{{ menu.side5.photo }}" width="100%" height="150" stretch="aspectFill" placeholder="~/images/loading.png" placeholderStretch="aspectFill" />
+                        <WrapLayout class="dish" orientation="horizontal" top="100">
+                            <Label text="{{ menu.side5.name }}" />
+                            <Label class="veg" text="V" visibility="{{ menu.side5.vegetarian ? 'visible' : 'collapsed' }}" textWrap="true" />
+                        </WrapLayout>
+                    </AbsoluteLayout>
+                    <WrapLayout class="alert" orientation="horizontal" visibility="{{ menu.side5.yourAllergenMessage ? 'visible' : 'collapsed' }}">
+                        <Label class="fa" text="&#xf06a; " textWrap="true" />
+                        <Label text="{{ menu.side5.yourAllergenMessage }}" textWrap="true" />
+                    </WrapLayout>
+                </StackLayout>
+
+                <StackLayout class="title">
+                    <Label text="Desserts" />
+                </StackLayout>
+
+                <StackLayout class="item" tap="goDessert1">
+                    <AbsoluteLayout>
+                        <i:NSImage src="{{ menu.dessert1.photo }}" width="100%" height="150" stretch="aspectFill" placeholder="~/images/loading.png" placeholderStretch="aspectFill" />
+                        <WrapLayout class="dish" orientation="horizontal" top="100">
+                            <Label text="{{ menu.dessert1.name }}" />
+                            <Label class="veg" text="V" visibility="{{ menu.dessert1.vegetarian ? 'visible' : 'collapsed' }}" textWrap="true" />
+                        </WrapLayout>
+                    </AbsoluteLayout>
+                    <WrapLayout class="alert" orientation="horizontal" visibility="{{ menu.dessert1.yourAllergenMessage ? 'visible' : 'collapsed' }}">
+                        <Label class="fa" text="&#xf06a; " textWrap="true" />
+                        <Label text="{{ menu.dessert1.yourAllergenMessage }}" textWrap="true" />
+                    </WrapLayout>
+                </StackLayout>
+                <StackLayout class="item" tap="goDessert2" visibility="{{ menu.dessert2.name ? 'visible' : 'collapsed' }}">
+                    <AbsoluteLayout>
+                        <i:NSImage src="{{ menu.dessert2.photo }}" width="100%" height="150" stretch="aspectFill" placeholder="~/images/loading.png" placeholderStretch="aspectFill" />
+                        <WrapLayout class="dish" orientation="horizontal" top="100">
+                            <Label text="{{ menu.dessert2.name }}" />
+                            <Label class="veg" text="V" visibility="{{ menu.dessert2.vegetarian ? 'visible' : 'collapsed' }}" textWrap="true" />
+                        </WrapLayout>
+                    </AbsoluteLayout>
+                    <WrapLayout class="alert" orientation="horizontal" visibility="{{ menu.dessert2.yourAllergenMessage ? 'visible' : 'collapsed' }}">
+                        <Label class="fa" text="&#xf06a; " textWrap="true" />
+                        <Label text="{{ menu.dessert2.yourAllergenMessage }}" textWrap="true" />
+                    </WrapLayout>
+                </StackLayout>
+                <StackLayout class="item" tap="goDessert3">
+                    <AbsoluteLayout>
+                        <i:NSImage src="{{ menu.dessert3.photo }}" width="100%" height="150" stretch="aspectFill" placeholder="~/images/loading.png" placeholderStretch="aspectFill" />
+                        <WrapLayout class="dish" orientation="horizontal" top="100">
+                            <Label text="{{ menu.dessert3.name }}" />
+                            <Label class="veg" text="V" visibility="{{ menu.dessert3.vegetarian ? 'visible' : 'collapsed' }}" textWrap="true" />
+                        </WrapLayout>
+                    </AbsoluteLayout>
+                    <WrapLayout class="alert" orientation="horizontal" visibility="{{ menu.dessert3.yourAllergenMessage ? 'visible' : 'collapsed' }}">
+                        <Label class="fa" text="&#xf06a; " textWrap="true" />
+                        <Label text="{{ menu.dessert3.yourAllergenMessage }}" textWrap="true" />
+                    </WrapLayout>
+                </StackLayout>
+                <StackLayout class="item" tap="goDessert4">
+                    <AbsoluteLayout>
+                        <i:NSImage src="{{ menu.dessert4.photo }}" width="100%" height="150" stretch="aspectFill" placeholder="~/images/loading.png" placeholderStretch="aspectFill" />
+                        <WrapLayout class="dish" orientation="horizontal" top="100">
+                            <Label text="{{ menu.dessert4.name }}" />
+                            <Label class="veg" text="V" visibility="{{ menu.dessert4.vegetarian ? 'visible' : 'collapsed' }}" textWrap="true" />
+                        </WrapLayout>
+                    </AbsoluteLayout>
+                    <WrapLayout class="alert" orientation="horizontal" visibility="{{ menu.dessert4.yourAllergenMessage ? 'visible' : 'collapsed' }}">
+                        <Label class="fa" text="&#xf06a; " textWrap="true" />
+                        <Label text="{{ menu.dessert4.yourAllergenMessage }}" textWrap="true" />
+                    </WrapLayout>
+                </StackLayout>
+
+                <Label class="water" text="Fresh drinking water is available with every meal." />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+    <ActivityIndicator row="1" colSpan="3" width="100" height="100" busy="{{ isLoading }}" />
+</GridLayout>        

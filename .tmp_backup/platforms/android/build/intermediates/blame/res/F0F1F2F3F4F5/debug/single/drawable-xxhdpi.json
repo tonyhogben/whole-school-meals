@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/tony/apps/Whole-School-Meals/platforms/android/build/intermediates/res/merged/F0F1F2F3F4F5/debug/drawable-xxhdpi/ic_back.png",
+        "source": "/Users/tony/apps/Whole-School-Meals/platforms/android/src/main/res/drawable-xxhdpi/ic_back.png"
+    },
+    {
+        "merged": "/Users/tony/apps/Whole-School-Meals/platforms/android/build/intermediates/res/merged/F0F1F2F3F4F5/debug/drawable-xxhdpi/logo.png",
+        "source": "/Users/tony/apps/Whole-School-Meals/platforms/android/src/main/res/drawable-xxhdpi/logo.png"
+    },
+    {
+        "merged": "/Users/tony/apps/Whole-School-Meals/platforms/android/build/intermediates/res/merged/F0F1F2F3F4F5/debug/drawable-xxhdpi/background.png",
+        "source": "/Users/tony/apps/Whole-School-Meals/platforms/android/src/main/res/drawable-xxhdpi/background.png"
+    },
+    {
+        "merged": "/Users/tony/apps/Whole-School-Meals/platforms/android/build/intermediates/res/merged/F0F1F2F3F4F5/debug/drawable-xxhdpi/icon.png",
+        "source": "/Users/tony/apps/Whole-School-Meals/platforms/android/src/main/res/drawable-xxhdpi/icon.png"
+    }
+]

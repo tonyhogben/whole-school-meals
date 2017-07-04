@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/WholeSchoolMeals.app</string>
+		<key>CFBundleIdentifier</key>
+		<string>uk.co.wholeschoolmeals.app</string>
+		<key>CFBundleShortVersionString</key>
+		<string>0.9</string>
+		<key>CFBundleVersion</key>
+		<string>0.9.0.5</string>
+		<key>SigningIdentity</key>
+		<string>iPhone Developer: Matt Stanley-Webb (4P9DT8L5T8)</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2017-07-04T10:17:12Z</date>
+	<key>Name</key>
+	<string>WholeSchoolMeals</string>
+	<key>SchemeName</key>
+	<string>WholeSchoolMeals</string>
+</dict>
+</plist>

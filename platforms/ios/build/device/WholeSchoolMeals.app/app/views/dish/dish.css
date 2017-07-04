@@ -1,0 +1,43 @@
+.alert {
+    background-color: #b90a0a;
+    color: white;
+    padding: 10;
+}
+
+.feedback {
+    font-family: 'Duru Sans', sans-serif;
+    background-color: #456817;
+    background-image: ~/images/texture-overlay.png;
+    color: white;
+    padding: 10;
+    text-align: center;
+}
+.feedback button {
+    background-color: white;
+    color: #456817;
+    margin: 10;
+    font-size: 26;
+    padding: 15 0;
+    text-transform: uppercase;
+}
+.feedback button.loading {
+    background-color: #CDCDCD;
+    color: #456817;
+}
+.feedback .small {
+    font-size: 8;
+}
+
+.details {
+    margin: 10;
+}
+.heading {
+    color: gray;
+    font-size: 20;
+    font-weight: bold;
+    margin-top: 10;
+}
+.list {
+    color: gray;
+    font-size: 14;
+}

@@ -1,0 +1,42 @@
+<ScrollView>
+<StackLayout class="payment-tab">
+    <Label class="title" text="Online" textWrap="true" />
+    <Label class="para" text="To pay online, please use the button below to launch your Internet browser and visit ParentPay..." textWrap="true" />
+    <Button class="payment-btn" text="Visit ParentPay" tap="launchParentPay" />
+    <Label class="title" text="Cash" textWrap="true" />
+    <Label class="para" text="Please send your payment to school with your child in an envelope marked on the outside with your child’s full name, class, and the amount." textWrap="true" />
+    <Label class="title" text="Cheque" textWrap="true" />
+    <Label class="para" text="Please send your payment to school with your child and make it payable to 'Whole School Meals C.I.C.'." textWrap="true" />
+    <Label class="para" text="On the back of the cheque, write your child’s name in full, your child’s class, and the address of the bank account holder. If paying for more than one child, please use one cheque and state how much money relates to each child." textWrap="true" />
+    <Label class="para bold" text="Please note: there is a minimum cheque amount of £11.50" textWrap="true" />
+    <Label class="title" text="Information for Parents" textWrap="true" />
+    <GridLayout class="bullet" columns="20,*">
+        <Label col="0" class="fa bullet-point" text="&#xf138;" textWrap="true" />
+        <Label col="1" class="bullet-text" text="Please pay for your child’s meals in advance, either weekly or termly. Please pay on a Monday for all meals you intend your child to take during that week." textWrap="true" />        
+    </GridLayout>
+    <GridLayout class="bullet" columns="20,*">
+        <Label col="0" class="fa bullet-point" text="&#xf138;" textWrap="true" />
+        <Label col="1" class="bullet-text" text="Your child does not have to have 5 meals a week. However, we do need to know at the start of the week how many meals your child will take, and for which days." textWrap="true" />        
+    </GridLayout>
+    <GridLayout class="bullet" columns="20,*">
+        <Label col="0" class="fa bullet-point" text="&#xf138;" textWrap="true" />
+        <Label col="1" class="bullet-text" text="If your pre-payment is due to ‘run out’ in the middle of a week, please remember to top it up on the Monday beforehand, rather than bringing in payment on another day." textWrap="true" />        
+    </GridLayout>
+    <GridLayout class="bullet" columns="20,*">
+        <Label col="0" class="fa bullet-point" text="&#xf138;" textWrap="true" />
+        <Label col="1" class="bullet-text" text="Except in the case of children who are entitled to Free School Meals, we will not be able to serve your child meals unless we’ve received payment." textWrap="true" />        
+    </GridLayout>
+    <GridLayout class="bullet" columns="20,*">
+        <Label col="0" class="fa bullet-point" text="&#xf138;" textWrap="true" />
+        <Label col="1" class="bullet-text" text="If your child misses lunch for a good reason, such as illness, you will not be charged for that day." textWrap="true" />        
+    </GridLayout>
+    <GridLayout class="bullet" columns="20,*">
+        <Label col="0" class="fa bullet-point" text="&#xf138;" textWrap="true" />
+        <Label col="1" class="bullet-text" text="If you are a parent with children at Warden House or Nonington schools we hope you have already found the full Parent Pay system accessible. If you don’t already have a username and password for ParentPay (or have lost them), just ask at your school office and they will be re-issued to you. If you need a PayPoint card and don’t have one, you can also request one via your school office." textWrap="true" />        
+    </GridLayout>
+    <GridLayout class="bullet" columns="20,*">
+        <Label col="0" class="fa bullet-point" text="&#xf138;" textWrap="true" />
+        <Label col="1" class="bullet-text" text="If your child attends a Folkestone or Dover Schools, the online ParentPay system is not applicable as all payments should be made direct to the school that they attend." textWrap="true" />        
+    </GridLayout>
+</StackLayout>  
+</ScrollView>

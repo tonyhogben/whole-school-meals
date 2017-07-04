@@ -1,0 +1,11 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
+    <Page.actionBar>
+        <ActionBar title="Settings" class="action-bar">
+            <NavigationButton icon="res://ic_back" tap="back" automationText="GoBack" />
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout>
+        <button text="schools" tap="schools" />
+        <button text="allergens" tap="allergens" />
+    </StackLayout>
+</Page>
